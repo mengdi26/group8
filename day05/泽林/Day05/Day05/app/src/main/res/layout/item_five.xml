@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_39"
+        android:includeFontPadding="false"
+        android:text="悠然古镇"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rv_main"
+        android:layout_width="@dimen/dp_316"
+        android:layout_height="@dimen/dp_178"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_marginLeft="@dimen/dp_16"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
