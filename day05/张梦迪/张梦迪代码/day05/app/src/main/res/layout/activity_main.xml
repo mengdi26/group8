@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="@dimen/dp_264"
+            android:layout_height="@dimen/dp_39"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:background="@drawable/yuanjiao"
+            android:hint="收缩诗人名字  诗歌关键词" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:src="@drawable/z01_05" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/g02_07" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp_400"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_12"
+        android:src="@drawable/aaa" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_33"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_55"
+            android:src="@drawable/tj" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/fh" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/sg" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:src="@drawable/ph" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginLeft="@dimen/dp_23"
+            android:src="@drawable/hy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_20"
+            android:text="每日推荐"
+            android:layout_marginLeft="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="飞花令" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:text="诗歌社群" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:text="排行榜" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:text="会员社区" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/dp_85"
+            android:layout_height="@dimen/dp_25"
+            android:text="诗歌群PK"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_25"
+            android:text="08-01"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/dp_135"/>
+        <TextView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_25"
+            android:text="日晚"
+            android:textSize="@dimen/dp_20"/>
+        <TextView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_25"
+            android:textSize="@dimen/dp_20"
+            android:text="8:00"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_25"
+            android:text="开始"
+            android:textSize="@dimen/dp_20"/>
+    </LinearLayout>
+<ImageView
+    android:layout_width="@dimen/dp_450"
+    android:layout_height="@dimen/dp_200"
+    android:src="@drawable/a03_33"
+    android:layout_marginLeft="@dimen/dp_18"
+    android:layout_marginTop="@dimen/dp_21"/>
+</LinearLayout>
