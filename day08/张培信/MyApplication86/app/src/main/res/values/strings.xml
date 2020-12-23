@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="connec_exception">Io异常</string>
+    <string name="json_parse_exception">证书异常</string>
+    <string name="ssl_exception">json解析异常</string>
+    <string name="complete">ss</string>
+    <string name="home_tab_title">首页</string>
+    <string name="collect_tab_title">发现</string>
+    <string name="kk">商城</string>
+    <string name="uu">我的</string>
+</resources>
