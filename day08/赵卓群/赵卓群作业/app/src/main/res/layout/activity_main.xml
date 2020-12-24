@@ -4,36 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".mvp.ui.activity.MainActivity">
 
-    <RadioGroup
-        android:id="@+id/rg_main"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/Mark"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/weixing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="卫星地图"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/putong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="普通地图"
-            android:textSize="20sp" />
-    </RadioGroup>
-
-    <com.baidu.mapapi.map.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:text="Mark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/POI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mark"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
