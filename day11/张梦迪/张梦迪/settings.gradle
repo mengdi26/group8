@@ -1,0 +1,5 @@
+include ':jiguang-demo'
+include ':jiguang'
+include ':Jpull_text'
+include ':app'
+rootProject.name = "Data_12_21"
