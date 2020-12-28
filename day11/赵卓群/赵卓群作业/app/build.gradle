@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.a1228"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY  : "9ee28280cd1b14155dba8472",//值来自开发者平台取得的AppKey
+                JPUSH_CHANNEL : "default_developer",
+
+                //xiaomi_config_start
+                XIAOMI_APPID  : "MI-小米的APPID",
+                XIAOMI_APPKEY : "MI-小米的APPKEY",
+                //xiaomi_config_end
+                //oppo_config_start
+                OPPO_APPKEY   : "OP-oppo的APPKEY",
+                OPPO_APPID    : "OP-oppo的APPID",
+                OPPO_APPSECRET: "OP-oppo的APPSECRET",
+                //oppo_config_end
+                //vivo_config_start
+                VIVO_APPKEY   : "vivo的APPKEY",
+                VIVO_APPID    : "vivo的APPID",
+                //vivo_config_end
+
+                //jshare_config_start
+                JSHARE_PKGNAME: applicationId,
+                TENCENT_APPID : "腾讯的appid",//腾讯开放平台注册应用得到的appId
+                FACEBOOK_APPID: "facebook的appid",//facebook注册应用得到的appId
+                //jshare_config_end
+        ]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(path: ':jiguang')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation(name: 'com.heytap.msp-push-2.1.0', ext: 'aar')
+
+    implementation 'com.youth.banner:banner:1.4.10'//轮播图依赖
+    implementation 'com.github.bumptech.glide:glide:4.8.0'// 图片加载框架依赖
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation 'com.google.code.gson:gson:2.8.5'//自动解析
+    implementation 'com.android.support:design:29.0.2'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")  //okhttp
+
+}
