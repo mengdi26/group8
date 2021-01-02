@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="@dimen/dp_55"
+        android:layout_height="@dimen/dp_27"
+        android:text="报考"
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/dp_27"
+        android:layout_marginTop="@dimen/dp_74"
+        android:layout_marginLeft="@dimen/dp_17"/>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_110"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        android:layout_marginTop="@dimen/dp_34"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:background="#000000"/>
+    <ImageView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_110"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        android:layout_marginTop="@dimen/dp_34"
+        app:layout_constraintLeft_toRightOf="@id/image1"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:background="#CF0F0F"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
